@@ -1,0 +1,6 @@
+#!/bin/sh
+mysql -u root --password="pass" <<EOF
+USE test
+SELECT * FROM mailing;
+SELECT * FROM mailing_logs;
+EOF

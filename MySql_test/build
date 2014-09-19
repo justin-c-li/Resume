@@ -1,0 +1,25 @@
+#!/bin/sh
+mysql -u root --password="pass" <<EOF
+CREATE DATABASE IF NOT EXISTS test;
+USE test;
+DROP TABLE IF EXISTS mailing;
+CREATE TABLE mailing (email VARCHAR(255), domain VARCHAR(255));
+INSERT INTO mailing VALUES ('John','hotmail.com');
+INSERT INTO mailing VALUES ('Joe','live.com');
+INSERT INTO mailing VALUES ('Joseph','gmail.com');
+INSERT INTO mailing VALUES ('Jack','live.com');
+INSERT INTO mailing VALUES ('Josh','yahoo.com');
+INSERT INTO mailing VALUES ('Michelle','live.com');
+INSERT INTO mailing VALUES ('John','gmail.com');
+INSERT INTO mailing VALUES ('Sam','live.com');
+INSERT INTO mailing VALUES ('Jack','hotmail.com');
+INSERT INTO mailing VALUES ('Jessica','hotmail.com');
+INSERT INTO mailing VALUES ('Bob','gmail.com');
+INSERT INTO mailing VALUES ('Alex','live.com');
+INSERT INTO mailing VALUES ('Lisa','gmail.com');
+SELECT * FROM mailing;
+
+DROP TABLE mailing_logs;
+ 
+CREATE TABLE IF NOT EXISTS mailing_logs(domain VARCHAR(255), count INT, time DATE);
+EOF

@@ -1,0 +1,59 @@
+bash build
+email	domain
+John	hotmail.com
+Joe	live.com
+Joseph	gmail.com
+Jack	live.com
+Josh	yahoo.com
+Michelle	live.com
+John	gmail.com
+Sam	live.com
+Jack	hotmail.com
+Jessica	hotmail.com
+Bob	gmail.com
+Alex	live.com
+Lisa	gmail.com
+python test.py
+
+Current Entries:
+gmail.com 4
+hotmail.com 3
+live.com 5
+yahoo.com 1
+
+Previous Entries from a month ago:
+gmail.com 1
+hotmail.com 1
+live.com 1
+yahoo.com 1
+
+Final Results for the top Domains:
+live.com 400 %
+gmail.com 300 %
+hotmail.com 200 %
+yahoo.com 0 %
+
+bash sql
+email	domain
+John	hotmail.com
+Joe	live.com
+Joseph	gmail.com
+Jack	live.com
+Josh	yahoo.com
+Michelle	live.com
+John	gmail.com
+Sam	live.com
+Jack	hotmail.com
+Jessica	hotmail.com
+Bob	gmail.com
+Alex	live.com
+Lisa	gmail.com
+domain	count	time
+gmail.com	1	2014-08-05
+hotmail.com	1	2014-08-05
+live.com	1	2014-08-05
+yahoo.com	1	2014-08-05
+gmail.com	4	2014-09-04
+hotmail.com	3	2014-09-04
+live.com	5	2014-09-04
+yahoo.com	1	2014-09-04
