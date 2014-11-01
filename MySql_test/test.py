@@ -85,7 +85,7 @@ def compare_logs():
 			for i in range (0,50-1):
 				if(top_result[i]==None):
 					break
-				for j in range(0,i):
+				for j in range(0,50):
 					if(top_result[j]==None):
 						break
 					if(top_result[i]<top_result[j]):
